@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background-image: url(./Abstract-Timekeeper.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* Background by SVGBackgrounds.com */
+
+#root {
+  border: 2px solid greenyellow;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator {
+  background-image: url(./cool-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 9px 9px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  height: 390px;
+  width: 250px;
+}
+/* Background by coolbackgrounds.io */
+
+.display {
+  color: #fff;
+  font-size: 36px;
+  position: relative;
+  padding: 20px 10px;
+  text-align: right;
+  height: 70px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nums-container {
+  width: 75%;
+}
+
+.ops-container {
+  width: 25%;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.big-v {
+  border-radius: 50px;
+  height: 110px;
+}
+
+button.big-h {
+  border-radius: 50px;
+  width: 110px;
+}
+
+button.orange {
+  background-color: sandybrown;
+  color: #fff;
+}
+
+button.dark-grey {
+  background-color: slategrey;
+  color: #fff;
+}
+
+button.light-grey {
+  background-color: lightsteelblue;
+}
+
+button.ac {
+  margin-right: 50%;
 }
